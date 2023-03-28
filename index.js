@@ -7,8 +7,7 @@ const callbacks = new Map();
 app.use(express.static(__dirname + "/public"))
 
 app.get("/", (req, res) => {
-    res.set("ngrok-skip-browser-warning", "a")
-    res.sendFile(__dirname + "/public/index.html")
+    res.send("<h1>free pompompurin</h1>")
 })
 
 app.get("/test.js", (req, res) => {
